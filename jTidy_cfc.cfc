@@ -8,7 +8,7 @@
 		<cfreturn makexHTMLValid(core.contentForLayout()) />
 	</cffunction>
 	
-	<cffunction name="makexHTMLValid">
+	<cffunction name="makexHTMLValid" mixin="controller">
 		<cfargument name="strToParse" type="string" required="true"/>
 		
 			<cfinvoke 
